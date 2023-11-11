@@ -1,0 +1,20 @@
+Write a loop that initializes a to the squares of the first five integers.
+package com.company;
+class InitializeArray {
+    public static class InitializeArrayWithSquares {
+
+        public static void main(String[] args) {
+            // Declare an integer array called a
+            int[] a = new int[5];
+
+            for (int i = 0; i < a.length; i++) {
+                a[i] = i * i;
+            }
+
+            // Print the elements of the array a
+            for (int i = 0; i < a.length; i++) {
+                System.out.println("a[" + i + "] = " + a[i]);
+            }
+        }
+    }
+}
