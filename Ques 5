@@ -1,0 +1,24 @@
+Write a loop that calculates the average of the values of a.
+package com.company;
+public class CalculateAverage {
+
+    public static void main(String[] args) {
+        // Declare an integer array called a
+        int[] a = {1, 2, 3, 4, 5};
+
+        // Initialize variables to store the sum and average
+        int sum = 0;
+        float average;
+
+        // Calculate the sum of the elements of the array a
+        for (int j : a) {
+            sum += j;
+        }
+
+        // Calculate the average of the elements of the array a
+        average = (float) sum / a.length;
+
+        // Print the average
+        System.out.println("The average of the values of a is: " + average);
+    }
+}
