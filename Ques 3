@@ -1,0 +1,24 @@
+Declare an integer array called a
+package com.company;
+public class VariableDeclaration {
+
+    public static void main(String[] args) {
+        // Declare an integer array called a
+        int[] a;
+
+        // Initialize the array a with 5 elements
+        a = new int[5];
+
+        // Populate the array a with the values 1, 2, 3, 4, and 5
+        a[0] = 1;
+        a[1] = 2;
+        a[2] = 3;
+        a[3] = 4;
+        a[4] = 5;
+
+        // Print the elements of the array a
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("a[" + i + "] = " + a[i]);
+        }
+    }
+}
