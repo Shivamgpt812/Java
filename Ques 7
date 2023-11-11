@@ -1,0 +1,29 @@
+Write a loop that will calculate the first 10 Fibonacci numbers
+class ReverseArray {
+
+    public static void main(String[] args) {
+        // Declare two variables to store the first two Fibonacci numbers
+        int first = 0;
+        int second = 1;
+
+        // Declare a variable to store the current Fibonacci number
+        int fibonacci;
+
+        // Print the first two Fibonacci numbers
+        System.out.println(first);
+        System.out.println(second);
+
+        // Calculate the first 10 Fibonacci numbers
+        for (int i = 0; i < 10; i++) {
+            // Calculate the next Fibonacci number
+            fibonacci = first + second;
+
+            // Update the values of the first and second Fibonacci numbers
+            first = second;
+            second = fibonacci;
+
+            // Print the current Fibonacci number
+            System.out.println(fibonacci);
+        }
+    }
+}
