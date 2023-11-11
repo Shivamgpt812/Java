@@ -1,0 +1,21 @@
+//Write a loop that will move the items in array a into another array called b so that the order of b is the reverse of the order of a.
+public class ReverseArray {
+    public static void main(String[] args) {
+        // Declare two integer arrays called a and b
+        int[] a = {1, 2, 3, 4, 5};
+        int[] b = new int[a.length];
+
+        // Initialize the index of the last element of b
+        int endIndex = b.length - 1;
+
+        // Move the items in array an into array b in reverse order
+        for (int i = 0; i < a.length; i++) {
+            b[endIndex - i] = a[i];
+        }
+
+        // Print the elements of the array b
+        for (int i = 0; i < b.length; i++) {
+            System.out.println("b[" + i + "] = " + b[i]);
+        }
+    }
+}
