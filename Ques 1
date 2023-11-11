@@ -1,0 +1,14 @@
+//Declare an integer variable called n.
+package com.company;
+public class VariableDeclaration {
+
+    public static void main(String[] args) {
+        // Declare an integer variable called n
+        int n;
+
+        // Initialize the variable to 10
+        n = 10;
+
+        // Print the value of the variable
+        System.out.println("The value of n is: " + n);
+    }
