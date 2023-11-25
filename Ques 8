@@ -1,0 +1,49 @@
+//QUES1. Write a java program to design a point class with all the member functions as discussed in the class. Explain the significance of this keyword. 
+
+
+package com.company;
+class Point {
+    private int x;
+    private int y;
+
+    // Constructor
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    // Setter for x
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    // Setter for y
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    // Function to move the point
+    public void move(int dx, int dy) {
+        this.x += dx;
+        this.y += dy;
+    }
+
+    // Function to display the point's coordinates
+    public void display() {
+        System.out.println("Point(" + this.x + ", " + this.y + ")");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Point p1 = new Point(3, 5);
+        p1.display();
+
+        p1.setX(7);
+        p1.setY(10);
+        p1.display();
+
+        p1.move(2, -3);
+        p1.display();
+    }
+}
