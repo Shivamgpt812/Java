@@ -1,0 +1,42 @@
+//Write a Java program to add two matrices of the same size.
+
+
+public class AverageCalculator {
+    public static void main(String[] args) {
+        // Sample matrices with the same size
+        int[][] matrix1 = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+
+        int[][] matrix2 = {
+                {9, 8, 7},
+                {6, 5, 4},
+                {3, 2, 1}
+        };
+
+        // Get the number of rows and columns in the matrices
+        int rows = matrix1.length;
+        int columns = matrix1[0].length;
+
+        // Initialize a result matrix to store the addition result
+        int[][] resultMatrix = new int[rows][columns];
+
+        // Add the matrices
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                resultMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
+            }
+        }
+
+        // Display the result matrix
+        System.out.println("Resultant matrix after addition:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                System.out.print(resultMatrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
