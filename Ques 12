@@ -1,0 +1,28 @@
+//Write a Java program to find the duplicate values of an array of string values.
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class AverageCalculator {
+    public static void main(String[] args) {
+        // Sample array with string elements
+        String[] strings = { "apple", "banana", "orange", "apple", "grape", "banana", "kiwi" };
+
+        // Create a map to store the frequency of each string
+        Map<String, Integer> frequencyMap = new HashMap<>();
+
+        // Find the duplicate values
+        for (String str : strings) {
+            frequencyMap.put(str, frequencyMap.getOrDefault(str, 0) + 1);
+        }
+
+        // Display duplicate values
+        System.out.println("Duplicate values:");
+        for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.println(entry.getKey());
+            }
+        }
+    }
+}
