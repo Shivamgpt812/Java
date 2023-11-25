@@ -1,0 +1,27 @@
+//Write a Java program to find the maximum and minimum value of an array.
+
+
+public class AverageCalculator {
+    public static void main(String[] args) {
+        // Sample array with elements
+        int[] numbers = { 10, 5, 8, 3, 6, 12, 4 };
+
+        // Initialize variables to store min and max values
+        int min = numbers[0];
+        int max = numbers[0];
+
+        // Find the minimum and maximum values
+        for (int number : numbers) {
+            if (number < min) {
+                min = number;
+            }
+            if (number > max) {
+                max = number;
+            }
+        }
+
+        // Display the results
+        System.out.println("Minimum value: " + min);
+        System.out.println("Maximum value: " + max);
+    }
+}
