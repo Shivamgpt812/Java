@@ -1,0 +1,37 @@
+//Extend the Point Class to create Circle class with necessary members functions
+
+
+package com.company;
+import java.awt.*;
+
+class Circle {
+    private final Point center;
+    private double radius;
+
+    // Constructor
+    public Circle(Point center, double radius) {
+        this.center = center;
+        this.radius = radius;
+    }
+
+    // Function to calculate area of the circle
+    public double calculateArea() {
+        return Math.PI * this.radius * this.radius;
+    }
+
+    // Function to display circle information
+    public void display() {
+        System.out.println("Circle with center at ");
+        double distance = this.center.x;
+        System.out.println("Radius: " + this.radius);
+        System.out.println("Area: " + calculateArea());
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Point circleCenter = new Point(3, 5);
+        Circle circle = new Circle(circleCenter, 7.5);
+        circle.display();
+    }
+}
